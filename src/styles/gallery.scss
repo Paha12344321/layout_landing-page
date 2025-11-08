@@ -1,0 +1,38 @@
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  &__photos__first,
+  &__photos__third {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); // 👈 количество колонок
+    gap: 24px;
+  }
+  &__photos__second {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); //
+    gap: 24px;
+
+
+  }
+  &__photo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  }
+
+  .card__images {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  }
+
+
+
+  @media (max-width: 480px) {
+    .card__images {
+    gap: 8px;
+    }
+  }
+}
