@@ -1,9 +1,13 @@
 .main {
+  flex-grow: 1;
+  &__content {
   display: grid;
   row-gap: 100px;
-  padding-block: 100px;
 
-  @include contentPaddingInline;
+  padding-block: 100px;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+
 
   @include onTablet {
     row-gap: 140px;
@@ -16,5 +20,5 @@
     padding-block: 140px;
 
   }
-
+  }
 }

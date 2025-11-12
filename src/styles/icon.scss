@@ -4,6 +4,7 @@
   height: 24px;
   width: 24px;
   transition: transform 0.3s;
+  background-repeat: no-repeat;
 
   @include hover(transform, scale(1.2));
 
