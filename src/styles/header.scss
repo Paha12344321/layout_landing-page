@@ -1,37 +1,43 @@
 .header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   z-index: 1;
+  height: 100vh;
   background-image: url(../images/header-mobile.png);
   background-size: cover;
   background-position: center;
   color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 0 120px;
+
+  @media (max-width: 1024px) {
+    padding: 0 40px; // планшет
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 20px; // мобильный
+  }
+
 
   &__content {
-
+    justify-content: center;   /* вместо space-between */
+    align-items: center;
+    height: 100%;
     box-sizing: border-box;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
 
   }
   &__bottom{
-    padding-bottom: 40px;
+
+    flex: 1;                     /* занимает всё пространство */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: center;     /* центр по вертикали */
+    padding: 0;
+    padding-top: 83px;
 
 
-    @include onTablet {
-      padding-bottom: 64px;
-    }
+
   }
 }
 

@@ -1,15 +1,18 @@
 .more {
-  &__photo{
+
+  .more__photo {
     width: 100%;
+    display: block;
   }
-  &__title {
+
+  .more__title {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     color: #D12D35;
   }
 
-  &__text {
+  .more__text {
     text-align: center;
   }
 }

@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="icon" type="image/png" href="../images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
@@ -18,23 +19,27 @@
 <!-- #endregion-->
   <body class="page__body">
     <header class="header">
-      <div class="container">
+
         <div class="header__content">
-          <div class="top-bar">
+          <div class="top-bar top-bar--main">
             <a href="#" class="top-bar__logo-link">
               <img src="../images/logo.png" alt="THE MET LOGO" class="top-bar__logo" />
             </a>
 
             <div class="top-bar__right">
-              <div class="numbers-phone">
-              <p>The Met Fifth Avenue</p>
-              <p>+1 212-535-7710</p>
-              <p>The Met Cloisters</p>
-              <p>+1 212-923-3700</p>
+
+              <div class="phone-wrapper">
+                <a href="#" class="icon icon--phone"></a>
+
+                <div class="numbers-phone">
+                  <p>The Met Fifth Avenue</p>
+                  <p>+1 212-535-7710</p>
+                  <p>The Met Cloisters</p>
+                  <p>+1 212-923-3700</p>
+                </div>
               </div>
 
               <div class="top-bar__icons">
-                <a href="#" class="icon icon--phone"></a>
                 <a href="#menu" class="icon icon--menu"></a>
               </div>
             </div>
@@ -43,12 +48,11 @@
             <h1 class="title">Welcome to The MET</h1>
           </div>
         </div>
-      </div>
     </header>
 
     <aside class="page__menu menu" id="menu">
       <div class="container">
-        <div class="top-bar menu__top">
+        <div class="top-bar top-bar--menu menu__top">
           <a href="#" class="top-bar__logo">
             <img src="../images/logo.png" alt="THE MET LOGO" />
           </a>
@@ -82,7 +86,7 @@
             The Met Cloisters
             +1 212-923-3700
           </a>
-          <a class="menu_call--to--order">call to order</a>
+          <a class="menu__call--to--order">call to order</a>
         </div>
       </div>
     </aside>
@@ -249,18 +253,18 @@
                     <p class="avenue__content avenue__gray">
                       Phone
                     </p>
-                    <p>
+                    <a href="tel:+1 212-535-7710">
                       +1 212-535-7710
-                    </p>
+                    </a>
                   </div>
                   <div class="avenue__address">
                     <p class="avenue__content avenue__gray">
                       Address
                     </p>
-                    <p>
+                    <a href="https://share.google/8BuQGG2tuPQRaWjY5">
                       1000 Fifth Avenue
                       <br> New York, NY 10028
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -271,19 +275,19 @@
                     <p class="cloisters__content cloisters__gray">
                       Phone
                     </p>
-                    <p>
+                    <a href="tel:+1 212-923-3700">
                       +1 212-923-3700
-                    </p>
+                    </a>
                   </div>
                   <div class="cloisters__address">
                     <p class="cloisters__content cloisters__gray">
                       Address
                     </p>
-                    <p>
+                    <a href="https://share.google/ES21DzSL758wueBlB">
                       99 Margaret Corbin Drive
                       <br>Fort Tryon Park
                       <br>New York, NY 10040
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>

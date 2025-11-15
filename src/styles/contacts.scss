@@ -62,10 +62,28 @@
     }
   }
 
-  .avenue__phone,
-  .cloisters__phone,
-  .breuer__phone {
+
+  .avenue__phone a,
+  .cloisters__phone a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
     margin-bottom: 8px;
+
+    &:hover {
+      color: #b42a2a; /* фирменный красный */
+    }
+  }
+  .avenue__address a,
+  .cloisters__address a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-bottom: 8px;
+
+    &:hover {
+      color: #b42a2a; /* фирменный красный */
+    }
   }
 
   .contact-form {
@@ -96,6 +114,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  transition: transform 0.3s ease;
+
 
   input,
   textarea {
@@ -106,12 +126,18 @@
     border-radius: 2px;
     outline: none;
     resize: none;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
+    transition: border 0.3s ease;
 
     &:focus {
       border-color: #b42a2a;
       box-shadow: 0 0 4px rgba(180, 42, 42, 0.4);
     }
+    &:hover {
+      transition: all 0.3s ease;
+      transform: scale(1.1);
+    }
+
+
   }
 
   textarea {
@@ -138,6 +164,7 @@
       background-color: transparent;
       border: 1px solid #b42a2a;
       color: #b42a2a;
+      transform: scale(1.1);
     }
   }
 }

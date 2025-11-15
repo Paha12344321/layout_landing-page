@@ -1,11 +1,15 @@
 $main-white: #fff;
 
 .nav__link {
-  color: white;
+  position: relative;
+  display: inline-block;
   text-decoration: none;
-  font-size: 22px;
-  line-height: 22px;
+  color: #fff; // или твой цвет
+  font-size: clamp(18px, 2vw, 26px);
   letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+
 
   &::after {
     content: '';
@@ -18,7 +22,7 @@ $main-white: #fff;
 
     transition: transform 0.3s;
     transform: scaleX(0);
-    transform-origin: left;
+
   }
 
   &:hover::after {
@@ -29,7 +33,7 @@ $main-white: #fff;
 .nav__list {
   padding-left: 0;
   align-items: flex-start;
-  margin-top: 160px;
+  margin-top: 55px;
   padding: 0;
   list-style: none;
   display: flex;
