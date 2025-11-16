@@ -23,10 +23,10 @@
   .container {
 
     margin: 0 auto;
-    height: 100%;                     /* важно */
+    height: 100%;         
     display: flex;
     flex-direction: column;
-    justify-content: space-between;   /* распределение как в макете */
+    justify-content: space-between;
   }
 
   &__top {

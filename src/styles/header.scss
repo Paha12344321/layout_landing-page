@@ -10,16 +10,16 @@
   padding: 0 120px;
 
   @media (max-width: 1024px) {
-    padding: 0 40px; // планшет
+    padding: 0 40px;
   }
 
   @media (max-width: 600px) {
-    padding: 0 20px; // мобильный
+    padding: 0 20px;
   }
 
 
   &__content {
-    justify-content: center;   /* вместо space-between */
+    justify-content: center;
     align-items: center;
     height: 100%;
     box-sizing: border-box;
@@ -30,9 +30,9 @@
   }
   &__bottom{
 
-    flex: 1;                     /* занимает всё пространство */
+    flex: 1;
     display: flex;
-    justify-content: center;     /* центр по вертикали */
+    justify-content: center;
     padding: 0;
     padding-top: 83px;
 

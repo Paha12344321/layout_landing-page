@@ -48,27 +48,36 @@
   align-items: center;
 }
 
-/* Скрытый текст */
+
 .numbers-phone {
   position: absolute;
   top: 50%;
-  left: -220px; /* подбери под свой макет */
+  left: -220px;
   transform: translateY(-50%);
   background: transparent;
   color: white;
   text-align: right;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease;
-  pointer-events: none; /* чтобы текст не мешал ховеру */
+  transition: all 0.8s ease;
 }
 
-/* Показываем при наведении */
-.phone-wrapper:hover .numbers-phone {
+.numbers-phone a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.8s ease;
+  margin-bottom: 8px;
+
+  &:hover {
+    color: #b42a2a;
+  }
+}
+
+.phone-wrapper:hover .numbers-phone,
+.numbers-phone:hover {
   opacity: 1;
   visibility: visible;
 }
-
 }
 
 #about-us,

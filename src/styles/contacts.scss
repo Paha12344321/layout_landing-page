@@ -5,7 +5,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 40px;
     align-items: start;
 
@@ -71,7 +71,7 @@
     margin-bottom: 8px;
 
     &:hover {
-      color: #b42a2a; /* фирменный красный */
+      color: #b42a2a;
     }
   }
   .avenue__address a,
@@ -82,7 +82,7 @@
     margin-bottom: 8px;
 
     &:hover {
-      color: #b42a2a; /* фирменный красный */
+      color: #b42a2a;
     }
   }
 
@@ -90,7 +90,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    grid-column: 3 / 5;
+    grid-column: 3;
     justify-self: stretch;
 
     @media (max-width: 1024px) {
