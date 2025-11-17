@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 24px;
+    gap: 5px;
     width: 100%;
     flex-wrap: nowrap;
   }
@@ -18,6 +18,7 @@
 
   .gallery__photo {
     width: 100%;
+
     height: auto;
     object-fit: cover;
     border-radius: 8px;
@@ -59,8 +60,8 @@
 
 
   &__photos__first,
-  &__photos__second,
-  &__photos__third {
+  &__photos__third,
+  &__photos__second {
     margin-bottom: 40px;
     width: clamp(280px, 80vw, 1200px);
     margin-inline: auto;
@@ -69,11 +70,24 @@
   @media (max-width: 1024px) {
     .gallery__photo {
     width: 60%;
-  }
+    }
+    &__photos__second{
+      .gallery__photo {
+      width: clamp(29px, 30vw, 1024px);
+    }
+    }
+
+
 
   @media (max-width: 768px) {
     .gallery__photo {
-    width: 50%;
+    width: 55%;
+  }
+
+  &__photos__second{
+      .gallery__photo {
+      width: clamp(1px, 30vw, 720px);
+    }
   }
 
     .card__images {
@@ -119,7 +133,7 @@
   padding: 12px 48px;
   border: 1px solid #b42a2a;
   transition: all 0.3s ease;
-  text-align: center;
+
 }
 
 .exhibitions__button:hover {

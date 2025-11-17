@@ -1,12 +1,22 @@
 .main {
+  width: 100%;
   flex-grow: 1;
-  &__content {
-  display: grid;
-  row-gap: 100px;
 
-  padding-block: 100px;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
+  &__content {
+    display: grid;
+    row-gap: 100px;
+    padding-block: 100px;
+
+    @include onTablet {
+      row-gap: 140px;
+      padding-block: 140px;
+    }
+
+    @include onDesktop {
+      row-gap: 140px;
+      padding-block: 140px;
+    }
+  }
 
 
   @include onTablet {
@@ -21,4 +31,4 @@
 
   }
   }
-}
+

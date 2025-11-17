@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-bottom: 4px;
 
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -119,9 +120,8 @@
 
   input,
   textarea {
-    width: 100%;
-    padding: 14px;
-    font-size: 14px;
+    padding: 12px;
+    font-size: 12px;
     border: 1px solid #ddd;
     border-radius: 2px;
     outline: none;
@@ -153,7 +153,7 @@
     letter-spacing: 1px;
     border: none;
     padding: 14px 0;
-    width: calc(100% + 30px);
+    width: 100%;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 8px;
