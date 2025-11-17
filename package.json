@@ -3,7 +3,8 @@
   "source": "src/scripts/index.html",
   "scripts": {
     "start": "parcel --open",
-    "build": "parcel build src/scripts/index.html --dist-dir docs"
+    "build": "parcel build src/scripts/index.html --dist-dir docs",
+    "test": "echo \"OK\""
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.0",
